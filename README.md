@@ -15,6 +15,25 @@ and optimization that are used to compute  ML graphs. This will be done by
 looking under the hood of three major ML Engines: (a) Facebook Glow; (b) Google
 TensorFLow XLA; and (c) Google JAX.
 
+[Glow](https://github.com/pytorch/glow) is a machine learning compiler from
+Facebook that accelerates the performance of deep learning frameworks on
+different hardware platforms. In this course we will study how the Glow
+framework works, and show how to use quantization to generate code for a model
+in a NeuroMorphic Processor (NMP).
+
+[XLA](https://www.tensorflow.org/xla) (Accelerated Linear Algebra) is
+a domain-specific compiler for linear algebra, from Google, that can accelerate
+TensorFlow models. It leverages on the effcient partitioning of tensor data
+across the memory hierarchy of a processor to generate high-performance code.
+In this course we will study XLA HLO graph representation, and show how to
+generate efficient code for operators like convolution.
+
+[JAX](https://github.com/google/jax) (Just After Execution) is a Python library
+and JIT compiler designed by Google to speedup high-performance numerical
+computing and machine learning applications. It has been extensively used  by
+DeepMind in its projects, and leverages on Google TensorFlow XLA to generate
+efficent code for CPUs/GPUs. In this course we will explain JAX in details and
+discuss how model graphs can be parallelized in a cluster.
 
 ## First Project: ONNX
 

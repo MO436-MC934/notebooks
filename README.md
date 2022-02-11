@@ -40,13 +40,13 @@ discuss how model graphs can be parallelized in a cluster.
 In the first project, you receive a template in python of LeNet Model. You will
 complement the model, generate the ONNX graph and use Netron tool to display
 and print the model to pdf. Details about this project are in the
-[First Project][P1] notebook.
+[First Project](./P1.ipynb) notebook.
 
 ## Second Project: The GLOW Plataform
 
 The second project requires you to read the ONNX graph from previous lab,
 generate the HIR as is, do fusion and quantization and generate new HIR.
-Details about this project are in the [Second Project][P2] notebook.
+Details about this project are in the [Second Project](./P2.ipynb) notebook.
 
 ## Third Project: GEMM Optimization
 

@@ -56,7 +56,7 @@ developers choose the right framework for their task, allows authors to focus
 on innovative enhancements, and enables hardware vendors to streamline
 optimizations for their platforms.
 
-Details about this project are in the [First Project](https://github.com/MO436-MC934/notebooks/wiki/1.ONNX#1open-neural-network-exchange--onnx) in the wiki.
+Details about this project are in the [ONNX Section](https://github.com/MO436-MC934/notebooks/wiki/1.ONNX#1open-neural-network-exchange--onnx) in the Wiki.
 
 ## Second Project: The GLOW Plataform
 
@@ -66,27 +66,26 @@ Glow is a machine learning compiler and execution engine for hardware accelerato
 
 Glow lowers a traditional neural network dataflow graph into a two-phase strongly-typed [intermediate representation](https://github.com/pytorch/glow/blob/master/docs/IR.md) (IR). The high-level IR allows the optimizer to perform domain-specific optimizations. The lower-level instruction-based address-only IR allows the compiler to perform memory-related optimizations, such as instruction scheduling, static memory allocation and copy elimination. At the lowest level, the optimizer performs machine-specific code generation to take advantage of specialized hardware features. Glow features a lowering phase which enables the compiler to support a high number of input operators as well as a large number of hardware targets by eliminating the need to implement all operators on all targets. The lowering phase is designed to reduce the input space and allow new hardware backends to focus on a small number of linear algebra primitives. The design philosophy is described in an [arXiv](https://arxiv.org/abs/1805.00907) paper.
 
-Details about this project are in the [Second Project]() in the wiki.
+Details about this project are in the [Glow Section](https://github.com/MO436-MC934/notebooks/wiki/2.Glow-PLataform#2-glow-platform) in the Wiki.
 
 ## Third Project: GEMM Optimization
 
 THe third project requires you to generate the ONNX model for ResNet, and fill
 in table with rows (C1, C2, C3 and C4)  and columns a list of four convolutions
 (no-BLAS, BLAS). Measure the model performance for each entry in the table.
-Details about this project are in the [Third Project][P3] notebook.
+Details about this project are in the [GEMM Section]() in the Wiki.
 
 ## Fourth Project: ML Code Optimization
 
 The fourth project requires you to generate the ONNX model for ResNet, and fill
 in table with rows being 4 sets of triples (k1,k2,k3) and columns (WS,IS).
 Measure the model performance for each entry in the table. Details about this
-project are in the [Fourth Project][P4] notebook.
+project are in the [ML Code Section]() in the Wiki.
 
 ## Fifth project: The JAX Library
 
 In the fifth project, you receive the ResNet model in python. The projerct
 requires you to measure the performance of each type of operator, with and
 without JAX, filling in a table where rows are (Model operator) and columns are
-(No-JAX,JAX). Details about this project are in the [Fifth Project][P5]
-notebook.
+(No-JAX,JAX). Details about this project are in the [JAX Library]() in the Wiki.
 

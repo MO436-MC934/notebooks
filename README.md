@@ -37,16 +37,35 @@ discuss how model graphs can be parallelized in a cluster.
 
 ## First Project: ONNX
 
-In the first project, you receive a template in python of LeNet Model. You will
-complement the model, generate the ONNX graph and use Netron tool to display
-and print the model to pdf. Details about this project are in the
-[First Project](./P1.ipynb) notebook.
+In 2017, AWS, Microsoft, and Facebook came together to launch the Open Neural
+Network Exchange (ONNX), which defines a standard for ML interoperability. ONNX
+has two components: a common set of operators and a common file format.
+Operators are the building blocks of machine learning and deep learning models.
+By standardizing a common set of operators, ONNX makes it easy to consume deep
+learning models trained in any of the supported frameworks. It defines an
+extensible computation graph model, as well as definitions of built-in
+operators and standard data types.
+
+The common file format of ONNX becomes the lowest common denominator to
+represent a model. Once a model is exported to ONNX, irrespective of the
+framework it is trained in, it exposes a standard graph and set of operators
+based on the specification. Every model is converted into a standard
+intermediate representation (IR) that is well-defined and well-documented. By
+providing a common representation of the computation graph, ONNX helps
+developers choose the right framework for their task, allows authors to focus
+on innovative enhancements, and enables hardware vendors to streamline
+optimizations for their platforms. Details about this project are in the
+[First Project]() in the wiki.
 
 ## Second Project: The GLOW Plataform
 
-The second project requires you to read the ONNX graph from previous lab,
-generate the HIR as is, do fusion and quantization and generate new HIR.
-Details about this project are in the [Second Project](./P2.ipynb) notebook.
+Glow is a machine learning compiler and execution engine for hardware accelerators. It is designed to be used as a backend for high-level machine learning frameworks. The compiler is designed to allow state of the art compiler optimizations and code generation of neural network graphs.
+
+### How does it work?
+
+Glow lowers a traditional neural network dataflow graph into a two-phase strongly-typed [intermediate representation](https://github.com/pytorch/glow/blob/master/docs/IR.md) (IR). The high-level IR allows the optimizer to perform domain-specific optimizations. The lower-level instruction-based address-only IR allows the compiler to perform memory-related optimizations, such as instruction scheduling, static memory allocation and copy elimination. At the lowest level, the optimizer performs machine-specific code generation to take advantage of specialized hardware features. Glow features a lowering phase which enables the compiler to support a high number of input operators as well as a large number of hardware targets by eliminating the need to implement all operators on all targets. The lowering phase is designed to reduce the input space and allow new hardware backends to focus on a small number of linear algebra primitives. The design philosophy is described in an [arXiv](https://arxiv.org/abs/1805.00907) paper.
+
+Details about this project are in the [Second Project]() in the wiki.
 
 ## Third Project: GEMM Optimization
 

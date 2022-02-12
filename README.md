@@ -54,8 +54,9 @@ intermediate representation (IR) that is well-defined and well-documented. By
 providing a common representation of the computation graph, ONNX helps
 developers choose the right framework for their task, allows authors to focus
 on innovative enhancements, and enables hardware vendors to streamline
-optimizations for their platforms. Details about this project are in the
-[First Project]() in the wiki.
+optimizations for their platforms.
+
+Details about this project are in the [First Project](https://github.com/MO436-MC934/notebooks/wiki/1.ONNX#1open-neural-network-exchange--onnx) in the wiki.
 
 ## Second Project: The GLOW Plataform
 

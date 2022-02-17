@@ -95,17 +95,23 @@ in the Wiki.
 
 TODO
 
-The syllabus of this section is described in [GEMM Section]() in the Wiki.
+The syllabus of this section is described in [GEMM
+Section](https://github.com/MO436-MC934/notebooks/wiki/3.GEMM-Optimization#3-gemm-optimization)
+in the Wiki.
 
 ## Section 4: ML Code Optimization
 
 TODO
 
-The syllabus of this section is described in [ML Code Section]() in the Wiki.
+The syllabus of this section is described in [ML Code
+Section](https://github.com/MO436-MC934/notebooks/wiki/4.ML-Code#4-ml-code-optimization)
+in the Wiki.
 
 ## Section 5: The JAX Library
 
 TODO
 
-The syllabus of this section is described in [JAX Library]() in the Wiki.
+The syllabus of this section is described in [JAX
+Library](https://github.com/MO436-MC934/notebooks/wiki/5.JAX-Library#5-the-jax-library)
+in the Wiki.
 

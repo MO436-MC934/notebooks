@@ -35,7 +35,9 @@ DeepMind in its projects, and leverages on Google TensorFlow XLA to generate
 efficent code for CPUs/GPUs. In this course we will explain JAX in details and
 discuss how model graphs can be parallelized in a cluster.
 
-## First Project: ONNX
+This course is divided into five sections, namely:
+
+## Section 1: ONNX
 
 In 2017, AWS, Microsoft, and Facebook came together to launch the Open Neural
 Network Exchange (ONNX), which defines a standard for ML interoperability. ONNX
@@ -56,11 +58,11 @@ developers choose the right framework for their task, allows authors to focus
 on innovative enhancements, and enables hardware vendors to streamline
 optimizations for their platforms.
 
-Details about this project are in the [ONNX
+The syllabus of this section is described in [ONNX
 Section](https://github.com/MO436-MC934/notebooks/wiki/1.ONNX-Model#1open-neural-network-exchange--onnx)
 in the Wiki.
 
-## Second Project: The GLOW Plataform
+## Section 2: The GLOW Plataform
 
 Glow is a machine learning compiler and execution engine for hardware
 accelerators. It is designed to be used as a backend for high-level machine
@@ -85,32 +87,25 @@ hardware backends to focus on a small number of linear algebra primitives. The
 design philosophy is described in an [arXiv](https://arxiv.org/abs/1805.00907)
 paper.
 
-Details about this project are in the [Glow
+The syllabus of this section is described in [Glow
 Section](https://github.com/MO436-MC934/notebooks/wiki/2.Glow-PLatform#2-glow-platform)
 in the Wiki.
 
-## Third Project: GEMM Optimization
+## Section 3: GEMM Optimization
 
-THe third project requires you to generate the ONNX model for ResNet, and fill
-in table with rows (C1, C2, C3 and C4)  and columns a list of four convolutions
-(no-BLAS, BLAS). Measure the model performance for each entry in the table.
+TODO
 
-Details about this project are in the [GEMM Section]() in the Wiki.
+The syllabus of this section is described in [GEMM Section]() in the Wiki.
 
-## Fourth Project: ML Code Optimization
+## Section 4: ML Code Optimization
 
-The fourth project requires you to generate the ONNX model for ResNet, and fill
-in table with rows being 4 sets of triples (k1,k2,k3) and columns (WS,IS).
-Measure the model performance for each entry in the table.
+TODO
 
-Details about this project are in the [ML Code Section]() in the Wiki.
+The syllabus of this section is described in [ML Code Section]() in the Wiki.
 
-## Fifth project: The JAX Library
+## Section 5: The JAX Library
 
-In the fifth project, you receive the ResNet model in python. The projerct
-requires you to measure the performance of each type of operator, with and
-without JAX, filling in a table where rows are (Model operator) and columns are
-(No-JAX,JAX).
+TODO
 
-Details about this project are in the [JAX Library]() in the Wiki.
+The syllabus of this section is described in [JAX Library]() in the Wiki.
 

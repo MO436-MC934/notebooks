@@ -112,6 +112,6 @@ in the Wiki.
 TODO
 
 The syllabus of this section is described in [JAX
-Library](https://github.com/MO436-MC934/notebooks/wiki/5.JAX-Library#5-the-jax-library)
+Library Section](https://github.com/MO436-MC934/notebooks/wiki/5.JAX-Library#5-the-jax-library)
 in the Wiki.
 

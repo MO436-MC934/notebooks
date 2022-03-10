@@ -111,15 +111,17 @@ task to be achieved when executing a convolution. This section will detail the G
 algorithm and explain how it can be used to design performant GEMMs, like those available in 
 OpenBLAS, Eigen, and MKL optimization libraries. 
 
+This section  will explore the design and optimization of a GEMM operation. 
+Students  will measure the speedup achieved by substituing the Convolution previously 
+designed in Section 2, by an im2col operation followed by a call to the OpenBLAS GEMM.
+
 The syllabus for this section are available in [GEMM
 Section](https://github.com/MO436-MC934/notebooks/wiki/3.GEMM-Optimization#3-gemm-optimization)
 in the Wiki.
 
-## Section 4: ML Code Optimization
+## Section 4: Slicing and Tiling
 
-This section  will explore the design and optimization of a GEMM operation. 
-Students  will measure the speedup achieved by substituing the Convolution previously 
-designed in Section 2, by an im2col operation followed by a call to the OpenBLAS GEMM.
+TODO
 
 The syllabus for this section is available in [ML Code
 Section](https://github.com/MO436-MC934/notebooks/wiki/4.ML-Code#4-ml-code-optimization)

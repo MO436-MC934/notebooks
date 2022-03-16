@@ -69,6 +69,8 @@ accelerators. It is designed to be used as a backend for high-level machine
 learning frameworks. The compiler is designed to allow state of the art
 compiler optimizations and code generation of neural network graphs.
 
+![Glow Design](./images/GlowDesign.png)
+
 ### How does it work?
 
 Glow lowers a traditional neural network dataflow graph into a two-phase
@@ -79,22 +81,24 @@ optimizations. The lower-level instruction-based address-only IR allows the
 compiler to perform memory-related optimizations, such as instruction
 scheduling, static memory allocation and copy elimination. At the lowest level,
 the optimizer performs machine-specific code generation to take advantage of
-specialized hardware features. Glow features a lowering phase which enables the
-compiler to support a high number of input operators as well as a large number
-of hardware targets by eliminating the need to implement all operators on all
-targets. The lowering phase is designed to reduce the input space and enable new
-hardware backends to focus on a small number of linear algebra primitives. Glow's 
-design philosophy is described in an [arXiv](https://arxiv.org/abs/1805.00907)
-paper.
+specialized hardware features.
 
-Convolution if the most computing-intensive operation 
-in a computational graph and thus is a central component of any DNN model. Therefore,
-understanding the  implementation of convolution is an important knowledge for any
-data-scientist. 
+![Glow Pipeline](./images/GlowPipeline.png)
 
-This section's assignment will explore the design of 
-the convolution operator. Students will be required to design their own convolution,
-and compare its performance with the convolution available in Glow.
+Glow features a lowering phase which enables the compiler to support a high
+number of input operators as well as a large number of hardware targets by
+eliminating the need to implement all operators on all targets. The lowering
+phase is designed to reduce the input space and enable new hardware backends to
+focus on a small number of linear algebra primitives. Glow's design philosophy
+is described in an [arXiv](https://arxiv.org/abs/1805.00907) paper.
+
+Convolution if the most computing-intensive operation in a computational graph
+and thus is a central component of any DNN model. Therefore, understanding the
+implementation of convolution is an important knowledge for any data-scientist. 
+
+This section's assignment will explore the design of the convolution operator.
+Students will be required to design their own convolution, and compare its
+performance with the convolution available in Glow.
 
 The syllabus for this section is available in [Glow
 Section](https://github.com/MO436-MC934/notebooks/wiki/2.Glow-PLatform#2-glow-platform)

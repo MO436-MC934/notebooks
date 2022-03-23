@@ -12,8 +12,8 @@ highlights the professional from the crowd of people working in this area.
 
 In this course we will cover the most important algorithms for parallelization
 and optimization that are used to compute  ML graphs. This will be done by
-looking under the hood of three major ML Engines: (a) Facebook Glow; (b) Google's
-TensorFLow XLA; and (c) Google JAX.
+looking under the hood of three major ML Engines: (a) Facebook Glow; (b)
+Google's TensorFLow XLA; and (c) Google JAX.
 
 [Glow](https://github.com/pytorch/glow) is a machine learning compiler from
 Facebook that accelerates the performance of deep learning frameworks on
@@ -54,7 +54,7 @@ framework it is trained in, it exposes a standard graph and set of operators
 based on the specification. Every model is converted into a standard
 intermediate representation (IR) that is well-defined and well-documented. By
 providing a common representation of the computation graph, ONNX helps
-developers choose the right framework for their task, allows researchers 
+developers choose the right framework for their task, allows researchers
 to focus on innovative enhancements, and enables hardware vendors to streamline
 optimizations for their platforms.
 
@@ -94,7 +94,7 @@ is described in an [arXiv](https://arxiv.org/abs/1805.00907) paper.
 
 Convolution if the most computing-intensive operation in a computational graph
 and thus is a central component of any DNN model. Therefore, understanding the
-implementation of convolution is an important knowledge for any data-scientist. 
+implementation of convolution is an important knowledge for any data-scientist.
 
 This section's assignment will explore the design of the convolution operator.
 Students will be required to design their own convolution, and compare its
@@ -106,18 +106,20 @@ in the Wiki.
 
 ## Section 3: GEMM Optimization
 
-As discussed in the previous section Convolution if the most computing-intensive operation 
-in any DNN model. A typical way to implement convolution is to convert it to a sequence of 
-two tasks: image to column (im2col), followed by a Generic Matrix-Matrix Multiply (GEMM). 
-The im2col operation converts both the filters and the input image to two matrices which are 
-then multiplied using GEMM. Performing an efficient GEMM is therefore the most relevant 
-task to be achieved when executing a convolution. This section will detail the Goto et al.  
-algorithm and explain how it can be used to design performant GEMMs, like those available in 
-OpenBLAS, Eigen, and MKL optimization libraries. 
+As discussed in the previous section Convolution if the most computing-intensive
+operation in any DNN model. A typical way to implement convolution is to convert
+it to a sequence of two tasks: image to column (im2col), followed by a Generic
+Matrix-Matrix Multiply (GEMM). The im2col operation converts both the filters
+and the input image to two matrices which are then multiplied using GEMM.
+Performing an efficient GEMM is therefore the most relevant task to be achieved
+when executing a convolution. This section will detail the Goto et al. algorithm
+and explain how it can be used to design performant GEMMs, like those available
+in OpenBLAS, Eigen, and MKL optimization libraries.
 
-This section  will explore the design and optimization of a GEMM operation. 
-Students  will measure the speedup achieved by substituting the Convolution previously 
-designed in Section 2, by an im2col operation followed by a call to the OpenBLAS GEMM.
+This section  will explore the design and optimization of a GEMM operation.
+Students  will measure the speedup achieved by substituting the Convolution
+previously designed in Section 2, by an im2col operation followed by a call to
+the OpenBLAS GEMM.
 
 The syllabus for this section are available in [GEMM
 Section](https://github.com/MO436-MC934/notebooks/wiki/3.GEMM-Optimization#3-gemm-optimization)

@@ -135,7 +135,20 @@ in the Wiki.
 
 ## Section 5: The JAX Library
 
-TODO
+Extracting parallelism from modern hardware requires extensive expertise in
+computer architecture and parallel programming. In this context, established
+frameworks provide well-optimized kernels for each common operation for each
+hardware. However, experiment with non-conventional operations makes it hard to
+leverage the performance of existing frameworks.
+
+In this section, we will explore the JAX library that allows arbitrary native
+Python code to be just-in-time compiled and optimized with the XLA compiler.
+This enables the engineer to use their familiarity with Python to implement
+performant operations with minimal code changes. JAX, for the most part,
+abstracts the details of writing high-performance code away from programmers. On
+top of that, users can also use the auto-differentiation mechanism to compute
+gradients and jacobians of mathematical functions, both of which are extensively
+used in ML and other scientific fields.
 
 The syllabus of this section is described in [JAX
 Library Section](https://github.com/MO436-MC934/notebooks/wiki/5.JAX-Library#5-the-jax-library)

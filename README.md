@@ -3,14 +3,14 @@
 Machine Learning (ML) has become a central area in modern computing. The number
 of applications using ML models has grown exponentially, and as such the demand
 for engineers who know how to pilot  toolchains  like PyTorch, TensorFlow, etc.
-On the other hand, there is much more interesting knowleged in ML than just
+On the other hand, there is much more interesting knowledge in ML than just
 learning how to apply it to a problem. Computing a ML model graph is
 a computational intensive task that requires a number of optimization and
 parallelization algorithms that are hidden from the typical user. Understanding
 these algorithms is a central tool for the  modern data-scientist,  as it
 highlights the professional from the crowd of people working in this area.
 
-In this course we will cover the most important algorithms for paralleization
+In this course we will cover the most important algorithms for parallelization
 and optimization that are used to compute  ML graphs. This will be done by
 looking under the hood of three major ML Engines: (a) Facebook Glow; (b) Google's
 TensorFLow XLA; and (c) Google JAX.
@@ -32,7 +32,7 @@ generate efficient code for operators like convolution.
 and JIT compiler designed by Google to speedup high-performance numerical
 computing and machine learning applications. It has been extensively used  by
 DeepMind in its projects, and leverages on Google TensorFlow XLA to generate
-efficent code for CPUs/GPUs. In this course we will explain JAX in details and
+efficient code for CPUs/GPUs. In this course we will explain JAX in details and
 discuss how model graphs can be parallelized in a cluster.
 
 This course is divided into five sections, namely:
@@ -106,7 +106,7 @@ in the Wiki.
 
 ## Section 3: GEMM Optimization
 
-As discussed in the prevous section Convolution if the most computing-intensive operation 
+As discussed in the previous section Convolution if the most computing-intensive operation 
 in any DNN model. A typical way to implement convolution is to convert it to a sequence of 
 two tasks: image to column (im2col), followed by a Generic Matrix-Matrix Multiply (GEMM). 
 The im2col operation converts both the filters and the input image to two matrices which are 
@@ -116,7 +116,7 @@ algorithm and explain how it can be used to design performant GEMMs, like those 
 OpenBLAS, Eigen, and MKL optimization libraries. 
 
 This section  will explore the design and optimization of a GEMM operation. 
-Students  will measure the speedup achieved by substituing the Convolution previously 
+Students  will measure the speedup achieved by substituting the Convolution previously 
 designed in Section 2, by an im2col operation followed by a call to the OpenBLAS GEMM.
 
 The syllabus for this section are available in [GEMM

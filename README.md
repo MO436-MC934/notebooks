@@ -3,17 +3,17 @@
 Machine Learning (ML) has become a central area in modern computing. The number
 of applications using ML models has grown exponentially, and as such the demand
 for engineers who know how to pilot  toolchains  like PyTorch, TensorFlow, etc.
-On the other hand, there is much more interesting knowleged in ML than just
+On the other hand, there is much more interesting knowledge in ML than just
 learning how to apply it to a problem. Computing a ML model graph is
 a computational intensive task that requires a number of optimization and
 parallelization algorithms that are hidden from the typical user. Understanding
 these algorithms is a central tool for the  modern data-scientist,  as it
 highlights the professional from the crowd of people working in this area.
 
-In this course we will cover the most important algorithms for paralleization
+In this course we will cover the most important algorithms for parallelization
 and optimization that are used to compute  ML graphs. This will be done by
-looking under the hood of three major ML Engines: (a) Facebook Glow; (b) Google's
-TensorFLow XLA; and (c) Google JAX.
+looking under the hood of three major ML Engines: (a) Facebook Glow; (b)
+Google's TensorFLow XLA; and (c) Google JAX.
 
 [Glow](https://github.com/pytorch/glow) is a machine learning compiler from
 Facebook that accelerates the performance of deep learning frameworks on
@@ -32,7 +32,7 @@ generate efficient code for operators like convolution.
 and JIT compiler designed by Google to speedup high-performance numerical
 computing and machine learning applications. It has been extensively used  by
 DeepMind in its projects, and leverages on Google TensorFlow XLA to generate
-efficent code for CPUs/GPUs. In this course we will explain JAX in details and
+efficient code for CPUs/GPUs. In this course we will explain JAX in details and
 discuss how model graphs can be parallelized in a cluster.
 
 This course is divided into five sections, namely:
@@ -54,7 +54,7 @@ framework it is trained in, it exposes a standard graph and set of operators
 based on the specification. Every model is converted into a standard
 intermediate representation (IR) that is well-defined and well-documented. By
 providing a common representation of the computation graph, ONNX helps
-developers choose the right framework for their task, allows researchers 
+developers choose the right framework for their task, allows researchers
 to focus on innovative enhancements, and enables hardware vendors to streamline
 optimizations for their platforms.
 
@@ -94,7 +94,7 @@ is described in an [arXiv](https://arxiv.org/abs/1805.00907) paper.
 
 Convolution if the most computing-intensive operation in a computational graph
 and thus is a central component of any DNN model. Therefore, understanding the
-implementation of convolution is an important knowledge for any data-scientist. 
+implementation of convolution is an important knowledge for any data-scientist.
 
 This section's assignment will explore the design of the convolution operator.
 Students will be required to design their own convolution, and compare its
@@ -106,18 +106,20 @@ in the Wiki.
 
 ## Section 3: GEMM Optimization
 
-As discussed in the prevous section Convolution if the most computing-intensive operation 
-in any DNN model. A typical way to implement convolution is to convert it to a sequence of 
-two tasks: image to column (im2col), followed by a Generic Matrix-Matrix Multiply (GEMM). 
-The im2col operation converts both the filters and the input image to two matrices which are 
-then multiplied using GEMM. Performing an efficient GEMM is therefore the most relevant 
-task to be achieved when executing a convolution. This section will detail the Goto et al.  
-algorithm and explain how it can be used to design performant GEMMs, like those available in 
-OpenBLAS, Eigen, and MKL optimization libraries. 
+As discussed in the previous section Convolution if the most computing-intensive
+operation in any DNN model. A typical way to implement convolution is to convert
+it to a sequence of two tasks: image to column (im2col), followed by a Generic
+Matrix-Matrix Multiply (GEMM). The im2col operation converts both the filters
+and the input image to two matrices which are then multiplied using GEMM.
+Performing an efficient GEMM is therefore the most relevant task to be achieved
+when executing a convolution. This section will detail the Goto et al. algorithm
+and explain how it can be used to design performant GEMMs, like those available
+in OpenBLAS, Eigen, and MKL optimization libraries.
 
-This section  will explore the design and optimization of a GEMM operation. 
-Students  will measure the speedup achieved by substituing the Convolution previously 
-designed in Section 2, by an im2col operation followed by a call to the OpenBLAS GEMM.
+This section  will explore the design and optimization of a GEMM operation.
+Students  will measure the speedup achieved by substituting the Convolution
+previously designed in Section 2, by an im2col operation followed by a call to
+the OpenBLAS GEMM.
 
 The syllabus for this section are available in [GEMM
 Section](https://github.com/MO436-MC934/notebooks/wiki/3.GEMM-Optimization#3-gemm-optimization)
@@ -133,7 +135,20 @@ in the Wiki.
 
 ## Section 5: The JAX Library
 
-TODO
+Extracting parallelism from modern hardware requires extensive expertise in
+computer architecture and parallel programming. In this context, established
+frameworks provide well-optimized kernels for each common operation for each
+hardware. However, experiment with non-conventional operations makes it hard to
+leverage the performance of existing frameworks.
+
+In this section, we will explore the JAX library that allows arbitrary native
+Python code to be just-in-time compiled and optimized with the XLA compiler.
+This enables the engineer to use their familiarity with Python to implement
+performant operations with minimal code changes. JAX, for the most part,
+abstracts the details of writing high-performance code away from programmers. On
+top of that, users can also use the auto-differentiation mechanism to compute
+gradients and jacobians of mathematical functions, both of which are extensively
+used in ML and other scientific fields.
 
 The syllabus of this section is described in [JAX
 Library Section](https://github.com/MO436-MC934/notebooks/wiki/5.JAX-Library#5-the-jax-library)

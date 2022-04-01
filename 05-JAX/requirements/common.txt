@@ -1,0 +1,5 @@
+tensorflow-cpu
+tensorflow-datasets
+jupyter
+numpy
+matplotlib
